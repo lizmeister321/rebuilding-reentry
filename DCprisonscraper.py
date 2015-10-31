@@ -33,17 +33,17 @@ end_year=end_date.strftime('%Y')
 
 data_url_prefix = 'doc.dc.gov/sites/default/files/dc/sites/doc/publication/attachments/'
 
+data_url_suffix = start_month + ' ' + start_day +  ' through ' + end_month + ' ' + end_day + ' ' + end_year+ '.pdf'
+data_url_full= data_url_prefix + data_url_suffix	
+clean_url=urllib.quote(data_url_full)
+
+clean_file='STATS_' + start_month + '-' + start_day + '_to_' + end_month + '-' + end_day + '-' + end_year
 
 
-	data_url_suffix = start_month + ' ' + start_day +  ' through ' + end_month + ' ' + end_day + ' ' + year+ '.pdf'
-	data_url_full= data_url_prefix + data_url_suffix	
-	clean_url=urllib.quote(data_url_full)
-
-clean_file='STATS_' + start_month + '-' + start_day + '_to_' + end_month + '-' + end_day + '-' + year
-
+urllib.urlretrieve('http://doc.dc.gov/sites/default/files/dc/sites/doc/publication/attachments/October%2024%20through%20October%2030%202015.pdf', 'STATS_{0}-{1}_to_{2}-{3}-{4}.pdf'.format(start_month, start_day, end_month,end_day,end_year))
 
 ##CURRENTLY STUCK HERE: 
-urllib.urlretrieve(urllib.quote(data_url_full),'test.pdf')
+# urllib.urlretrieve(urllib.quote(data_url_full),'test.pdf')
 ##returns the following:
 
 # Traceback (most recent call last):
