@@ -3,5 +3,7 @@ The DC DOC publishes weekly prison population stats in PDF form on their website
 
 Tied to the Rebuilding Re-Entry project at Techlady Hackathon #3 (more here:https://techlady.hackpad.com/)
 
+Also part of Rebuildilng Re-entry Hackathon Oct 31, 2015. Project Hackpad here: https://hackpad.com/Scraping-DC-Prison-PDFs-6tmwUOzdXFo
+
 Latest stats URL (as of August 8, 2015):
 http://doc.dc.gov/sites/default/files/dc/sites/doc/publication/attachments/August%201%20through%20August%207%202015.pdf
