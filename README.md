@@ -13,9 +13,11 @@ tl;dr Valerie scraped the PDF files she found via Google and ran them through Ta
 
 ### The long (hacky) version
 **Finding the PDFs**
+
 The Google search `DAILY OPERATING POPULATION COUNTS BY FACILITY site:doc.dc.gov/sites/default/files/dc/sites/doc/publication/attachments/` returns a bunch of past PDFs. [Link to these search results](https://www.google.com/search?q=DAILY+OPERATING+POPULATION+COUNTS+BY+FACILITY+site:doc.dc.gov/sites/default/files/dc/sites/doc/publication/attachments/&num=100&biw=1415&bih=725&filter=0).
 
 **Getting the PDFs**
+
 I saved the HTML page of these search results locally as `search_results.html` (my version of this file is also stored in this repo).
 
 I then parsed through this file in Python using [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/). If you've never used this before, you may need to run `pip install beautifulsoup4` to install it first. The script I used is in `results_parser.py`. In plain English, it:
@@ -30,6 +32,7 @@ Now I had a list of all of the URLs I wanted to download. (Available in the `con
 From there, I wrote a script, `pdf_downloader.py` to download each of them. Those PDFs are now in the `pdf_files` directory in this repo.
 
 **Parsing into CSV**
+
 This part was the trickiest in terms of configuration. It requires both JRuby and Tabula. The best way we found to install JRuby was via [RVM](https://rvm.io/). Once you've got RVM installed, run:
 ```
 rvm install jruby
@@ -43,7 +46,8 @@ jruby -S gem install tabula-extractor
 
 The script used for generating the (admittedly wonky) csvs in `csv_files` is at `tabula_extractor.rb`
 
-**Next steps**
+**Possible next steps**
+
 * Play with tabula to see if we can get better parsing results
 * Filter the PDFs to just the ones with just the information/formatting we want
 * Try automated ways of figuring out if there are more PDFs than the ones in the search results (without DDoSing the DC DOC)
