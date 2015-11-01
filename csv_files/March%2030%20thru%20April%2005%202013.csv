@@ -1,5 +1,19 @@
-CONTRACT SP,ACE,"","","","","","",""
-Correctional Treatment, Facility,"","","","","","",""
-Males,"",3,74 375 36,0 35,8 35,3 36,4 36,7
+"DAILY POPULATION REPORTDOC Official Population Counts by Facility","","","","","","","",""
+Reporting Period:,SAT,"",SUN,MON,TUES,WED,THUR,FRI,Operating
+"March 30 thru April 5, 2013",30-Mar,"",31-Mar,1-Apr,2-Apr,3-Apr,4-Apr,5-Apr,Capacity
+"Central Detention Facility     Males     Females",1754,"","1,779","1,779","1,777","1,777","1,774","1,778",""
+"","","","","","","","","","","",""
+"Total, Central Detention Facility","1,754","","1,779","1,779","1,777","1,777","1,774","1,778","2,164"
+"CONTRACT SPACECorrectional Treatment Facility     Males     Females","374144","","375147","360144","358147","353145","364142","367136",""
+"","","","","","","","","","","",""
+"","","","","","","","","","","",""
+"Total, Corr. Treatment Facility",518,"",522,504,505,498,506,503,696
+"Contract Halfway HousesEfforts for Ex-ConsFairviewHope VillageExtended House","1372826","","1372826","1372826","1372925","1172726","1372623","1282923",""
+"","","","","","","","","","","",""
+"Total, Contract Halfway Houses",74,"",74,74,74,71,69,72,121
+Juveniles,24,"",24,24,24,25,23,23,""
+"TOTAL DOC POPULATION:ALL LOCATIONS","2,370","","2,399","2,381","2,380","2,371","2,372","2,376",""
+*USMS (Not included in the Doc Count),58,"",58,58,58,58,58,56,""
+FBOP,112,"",112,112,111,109,107,106,""
 
 
